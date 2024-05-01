@@ -17,7 +17,7 @@ export default class NotionPageService {
    * Creates a grocery list from the provided data structure and sends it to Notion
    * @param object Data structure containing the grocery list
    */
-  public async createGroceryList(object: any): Promise<void> {
+  public async addObjectToPage(object: any): Promise<void> {
     try {
       // Add headings and list items for the grocery list
       this.addHeading1(object.title);
