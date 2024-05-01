@@ -17,7 +17,7 @@ export default class NotionPageService {
    * Creates a grocery list from the provided data structure and sends it to Notion
    * @param object Data structure containing the grocery list
    */
-  public createGroceryList(object: any): void {
+  public async createGroceryList(object: any): Promise<void> {
     try {
       // Add headings and list items for the grocery list
       this.addHeading1(object.title);
@@ -28,7 +28,7 @@ export default class NotionPageService {
       object.pharmacy.items.forEach((item: string) => this.addTodo(item));
 
       // Set the generated blocks in the Notion page
-      this.client.setPageBlocks(this.blocks);
+      await this.client.setPageBlocks(this.blocks);
       logger.info("Grocery list has been successfully created and sent to Notion.");
     } catch (error) {
       logger.error("Error creating grocery list:", error);

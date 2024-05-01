@@ -47,7 +47,7 @@ async function toNotionPage(token: string) {
 
   // Create the grocery list on the Notion page
   logger.info(`Creating grocery list on Notion page with ID '${databaseId}'.`);
-  pageService.createGroceryList(groceryList);
+  await pageService.createGroceryList(groceryList);
   logger.info("Successfully created grocery list on Notion page.");
 }
 
