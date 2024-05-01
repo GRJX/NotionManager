@@ -33,7 +33,7 @@ async function toNotionPage(token: string) {
   const pageService = new NotionPageService(pageClient);
 
   // Example input data for the grocery list
-  const groceryListPage: IGroceryList = {
+  const groceryList: IGroceryList = {
     title: "Grocery List Example",
     supermarket: {
       name: "Albert Heijn",
@@ -47,7 +47,7 @@ async function toNotionPage(token: string) {
 
   // Create the grocery list on the Notion page
   logger.info(`Creating grocery list on Notion page with ID '${databaseId}'.`);
-  pageService.createGroceryList(groceryListPage);
+  pageService.createGroceryList(groceryList);
   logger.info("Successfully created grocery list on Notion page.");
 }
 
