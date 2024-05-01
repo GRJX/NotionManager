@@ -3,7 +3,7 @@ import { RichText } from "../models/NotionBasicModel";
 import { Select, Title, Number, Text } from "../models/NotionDatabaseModel";
 import { logger } from "../utils/Logger";
 
-// Interface describing the structure of a Notion database entry
+// Interface describing the structure of a Notion database page properties
 interface INotionDatabaseStructure {
   Product: Title;
   Store: Select;
