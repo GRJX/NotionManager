@@ -1,12 +1,12 @@
 import { BlockObjectRequest } from "@notionhq/client/build/src/api-endpoints";
 import { RichText } from "../models/NotionBasicModel";
-import { Divider, Heading1, Heading2, Heading3, Todo } from "../models/NotionPageModel";
+import { Block, Divider, Heading1, Heading2, Heading3, Todo } from "../models/NotionPageModel";
 import { logger } from "../utils/Logger";
 import NotionPageClient from "../clients/NotionPageClient";
 
 // Service to manage page-level operations
 export default class NotionPageService {
-  private blocks: IBlock[] = [];
+  private blocks: Block[] = [];
   private client: NotionPageClient;
 
   constructor(client: NotionPageClient) {

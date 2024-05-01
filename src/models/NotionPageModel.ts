@@ -1,7 +1,7 @@
 import { RichText } from "./NotionBasicModel";
 
 // Base class representing a Notion block
-class Block {
+export class Block {
   public object: string = "block"; // The object type, always "block"
   public type: string; // The specific block type
 

@@ -1,5 +1,6 @@
 import { Client } from "@notionhq/client";
 import { BlockObjectRequest } from "@notionhq/client/build/src/api-endpoints";
+import { Block } from "../models/NotionPageModel";
 import { logger } from "../utils/Logger";
 
 // Class to handle Notion page operations
@@ -60,7 +61,7 @@ class NotionPageClient {
    * Appends blocks to the Notion page.
    * @param blocks The blocks to append to the page.
    */
-  public async setPageBlocks(blocks: IBlock[]): Promise<void> {
+  public async setPageBlocks(blocks: Block[]): Promise<void> {
     try {
       for (let i = 0; i < blocks.length; i += this.maxBlocks) {
         // Get the current segment of blocks within the limit
