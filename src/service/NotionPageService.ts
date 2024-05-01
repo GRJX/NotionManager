@@ -29,9 +29,9 @@ export default class NotionPageService {
 
       // Set the generated blocks in the Notion page
       await this.client.setPageBlocks(this.blocks);
-      logger.info("Grocery list has been successfully created and sent to Notion.");
+      logger.info("Object has been successfully created and sent to Notion.");
     } catch (error) {
-      logger.error("Error creating grocery list:", error);
+      logger.error("Error creating page object(s):", error);
       throw error;
     }
   }

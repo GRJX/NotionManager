@@ -7,7 +7,9 @@
     "clean": "rm -rf dist/*",
     "build": "npm run clean && tsc",
     "page": "node dist/src/page.js",
-    "page:debug": "LOG_LEVEL=DEBUG node dist/src/page.js"
+    "page:debug": "LOG_LEVEL=DEBUG node dist/src/page.js",
+    "db": "node dist/src/database.js",
+    "db:debug": "LOG_LEVEL=DEBUG node dist/src/database.js"
   },
   "keywords": [],
   "author": "",
