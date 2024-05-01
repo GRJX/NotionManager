@@ -37,7 +37,7 @@ async function toNotionPage(token: string) {
     title: "Grocery List Example",
     supermarket: {
       name: "Albert Heijn",
-      items: ["Pindakaas", "Chocopast", "Brood", "Melk"],
+      items: ["Pindakaas", "Chocopasta", "Brood", "Melk"],
     },
     pharmacy: {
       name: "Kruitvat",
