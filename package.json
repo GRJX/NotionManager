@@ -6,8 +6,8 @@
   "scripts": {
     "clean": "rm -rf dist/*",
     "build": "npm run clean && tsc",
-    "main": "node dist/src/index.js",
-    "main:debug": "LOG_LEVEL=DEBUG node dist/src/index.js"
+    "page": "node dist/src/page.js",
+    "page:debug": "LOG_LEVEL=DEBUG node dist/src/page.js"
   },
   "keywords": [],
   "author": "",
