@@ -1,6 +1,4 @@
-import NotionDatabaseClient from "./clients/NotionDatabaseClient";
 import NotionPageClient from "./clients/NotionPageClient";
-import NotionDatabaseService from "./service/NotionDatabaseService";
 import NotionPageService from "./service/NotionPageService";
 import { getEnvVariable } from "./utils/ConfigHelper";
 import { logger } from "./utils/Logger";
